@@ -21,6 +21,8 @@
 		D4C24C8019C48A610015639A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C24C6219C48A600015639A /* UIKit.framework */; };
 		D4C24C8819C48A610015639A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4C24C8619C48A610015639A /* InfoPlist.strings */; };
 		D4C24C8A19C48A610015639A /* KIMultipartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C24C8919C48A610015639A /* KIMultipartTests.m */; };
+		D4C24C9619C48ACD0015639A /* NSMutableData+MultipartFormData.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C24C9519C48ACD0015639A /* NSMutableData+MultipartFormData.m */; };
+		D4C24C9819C48C870015639A /* ac.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4C24C9719C48C870015639A /* ac.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		D4C24C8519C48A610015639A /* KIMultipartTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KIMultipartTests-Info.plist"; sourceTree = "<group>"; };
 		D4C24C8719C48A610015639A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4C24C8919C48A610015639A /* KIMultipartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMultipartTests.m; sourceTree = "<group>"; };
+		D4C24C9419C48ACD0015639A /* NSMutableData+MultipartFormData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+MultipartFormData.h"; sourceTree = "<group>"; };
+		D4C24C9519C48ACD0015639A /* NSMutableData+MultipartFormData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+MultipartFormData.m"; sourceTree = "<group>"; };
+		D4C24C9719C48C870015639A /* ac.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ac.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +117,10 @@
 		D4C24C6419C48A600015639A /* KIMultipart */ = {
 			isa = PBXGroup;
 			children = (
+				D4C24C9319C48AB40015639A /* Classes */,
 				D4C24C6D19C48A600015639A /* KIAppDelegate.h */,
 				D4C24C6E19C48A600015639A /* KIAppDelegate.m */,
+				D4C24C9719C48C870015639A /* ac.jpg */,
 				D4C24C7019C48A600015639A /* Main.storyboard */,
 				D4C24C7319C48A600015639A /* KIViewController.h */,
 				D4C24C7419C48A600015639A /* KIViewController.m */,
@@ -150,6 +157,15 @@
 				D4C24C8619C48A610015639A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4C24C9319C48AB40015639A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D4C24C9419C48ACD0015639A /* NSMutableData+MultipartFormData.h */,
+				D4C24C9519C48ACD0015639A /* NSMutableData+MultipartFormData.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4C24C7719C48A600015639A /* Images.xcassets in Resources */,
+				D4C24C9819C48C870015639A /* ac.jpg in Resources */,
 				D4C24C6919C48A600015639A /* InfoPlist.strings in Resources */,
 				D4C24C7219C48A600015639A /* Main.storyboard in Resources */,
 			);
@@ -252,6 +269,7 @@
 			files = (
 				D4C24C7519C48A600015639A /* KIViewController.m in Sources */,
 				D4C24C6F19C48A600015639A /* KIAppDelegate.m in Sources */,
+				D4C24C9619C48ACD0015639A /* NSMutableData+MultipartFormData.m in Sources */,
 				D4C24C6B19C48A600015639A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
