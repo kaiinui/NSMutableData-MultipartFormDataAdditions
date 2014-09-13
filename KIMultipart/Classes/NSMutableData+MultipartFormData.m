@@ -1,8 +1,11 @@
 #import "NSMutableData+MultipartFormData.h"
 
-NSString *const KIMultipartNSDataBoundary = @"KIBoundary";
+NSString *const KIMultipartBoundary = @"KIBoundary";
+NSString *const KIMultipartContentType = @"multipart/form-data; boundary=KIBoundary";
 
 @implementation NSMutableData (MultipartFormData)
+
+# pragma mark - Foundation Objects
 
 - (void)mp_setString:(NSString *)string forKey:(NSString *)key {
     [self mp_setBoundary];
@@ -79,7 +82,7 @@ NSString *const KIMultipartNSDataBoundary = @"KIBoundary";
 }
 
 - (void)mp_setBoundary {
-    [self appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n", KIMultipartNSDataBoundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    [self appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n", KIMultipartBoundary] dataUsingEncoding:NSUTF8StringEncoding]];
 }
 
 - (void)mp_setOctetStreamContentType {
