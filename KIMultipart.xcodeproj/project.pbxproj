@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4C24C5F19C48A600015639A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C24C5E19C48A600015639A /* Foundation.framework */; };
+		D4C24C6119C48A600015639A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C24C6019C48A600015639A /* CoreGraphics.framework */; };
+		D4C24C6319C48A600015639A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C24C6219C48A600015639A /* UIKit.framework */; };
+		D4C24C6919C48A600015639A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4C24C6719C48A600015639A /* InfoPlist.strings */; };
+		D4C24C6B19C48A600015639A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C24C6A19C48A600015639A /* main.m */; };
+		D4C24C6F19C48A600015639A /* KIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C24C6E19C48A600015639A /* KIAppDelegate.m */; };
+		D4C24C7219C48A600015639A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4C24C7019C48A600015639A /* Main.storyboard */; };
+		D4C24C7519C48A600015639A /* KIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C24C7419C48A600015639A /* KIViewController.m */; };
+		D4C24C7719C48A600015639A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4C24C7619C48A600015639A /* Images.xcassets */; };
+		D4C24C7E19C48A610015639A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C24C7D19C48A610015639A /* XCTest.framework */; };
+		D4C24C7F19C48A610015639A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C24C5E19C48A600015639A /* Foundation.framework */; };
+		D4C24C8019C48A610015639A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4C24C6219C48A600015639A /* UIKit.framework */; };
+		D4C24C8819C48A610015639A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4C24C8619C48A610015639A /* InfoPlist.strings */; };
+		D4C24C8A19C48A610015639A /* KIMultipartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4C24C8919C48A610015639A /* KIMultipartTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4C24C8119C48A610015639A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4C24C5319C48A600015639A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4C24C5A19C48A600015639A;
+			remoteInfo = KIMultipart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4C24C5B19C48A600015639A /* KIMultipart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIMultipart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C24C5E19C48A600015639A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D4C24C6019C48A600015639A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D4C24C6219C48A600015639A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D4C24C6619C48A600015639A /* KIMultipart-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KIMultipart-Info.plist"; sourceTree = "<group>"; };
+		D4C24C6819C48A600015639A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4C24C6A19C48A600015639A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4C24C6C19C48A600015639A /* KIMultipart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIMultipart-Prefix.pch"; sourceTree = "<group>"; };
+		D4C24C6D19C48A600015639A /* KIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIAppDelegate.h; sourceTree = "<group>"; };
+		D4C24C6E19C48A600015639A /* KIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIAppDelegate.m; sourceTree = "<group>"; };
+		D4C24C7119C48A600015639A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D4C24C7319C48A600015639A /* KIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIViewController.h; sourceTree = "<group>"; };
+		D4C24C7419C48A600015639A /* KIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIViewController.m; sourceTree = "<group>"; };
+		D4C24C7619C48A600015639A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4C24C7C19C48A610015639A /* KIMultipartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIMultipartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C24C7D19C48A610015639A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D4C24C8519C48A610015639A /* KIMultipartTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KIMultipartTests-Info.plist"; sourceTree = "<group>"; };
+		D4C24C8719C48A610015639A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4C24C8919C48A610015639A /* KIMultipartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIMultipartTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4C24C5819C48A600015639A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C24C6119C48A600015639A /* CoreGraphics.framework in Frameworks */,
+				D4C24C6319C48A600015639A /* UIKit.framework in Frameworks */,
+				D4C24C5F19C48A600015639A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C24C7919C48A610015639A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C24C7E19C48A610015639A /* XCTest.framework in Frameworks */,
+				D4C24C8019C48A610015639A /* UIKit.framework in Frameworks */,
+				D4C24C7F19C48A610015639A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4C24C5219C48A600015639A = {
+			isa = PBXGroup;
+			children = (
+				D4C24C6419C48A600015639A /* KIMultipart */,
+				D4C24C8319C48A610015639A /* KIMultipartTests */,
+				D4C24C5D19C48A600015639A /* Frameworks */,
+				D4C24C5C19C48A600015639A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4C24C5C19C48A600015639A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4C24C5B19C48A600015639A /* KIMultipart.app */,
+				D4C24C7C19C48A610015639A /* KIMultipartTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4C24C5D19C48A600015639A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4C24C5E19C48A600015639A /* Foundation.framework */,
+				D4C24C6019C48A600015639A /* CoreGraphics.framework */,
+				D4C24C6219C48A600015639A /* UIKit.framework */,
+				D4C24C7D19C48A610015639A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4C24C6419C48A600015639A /* KIMultipart */ = {
+			isa = PBXGroup;
+			children = (
+				D4C24C6D19C48A600015639A /* KIAppDelegate.h */,
+				D4C24C6E19C48A600015639A /* KIAppDelegate.m */,
+				D4C24C7019C48A600015639A /* Main.storyboard */,
+				D4C24C7319C48A600015639A /* KIViewController.h */,
+				D4C24C7419C48A600015639A /* KIViewController.m */,
+				D4C24C7619C48A600015639A /* Images.xcassets */,
+				D4C24C6519C48A600015639A /* Supporting Files */,
+			);
+			path = KIMultipart;
+			sourceTree = "<group>";
+		};
+		D4C24C6519C48A600015639A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4C24C6619C48A600015639A /* KIMultipart-Info.plist */,
+				D4C24C6719C48A600015639A /* InfoPlist.strings */,
+				D4C24C6A19C48A600015639A /* main.m */,
+				D4C24C6C19C48A600015639A /* KIMultipart-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4C24C8319C48A610015639A /* KIMultipartTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4C24C8919C48A610015639A /* KIMultipartTests.m */,
+				D4C24C8419C48A610015639A /* Supporting Files */,
+			);
+			path = KIMultipartTests;
+			sourceTree = "<group>";
+		};
+		D4C24C8419C48A610015639A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4C24C8519C48A610015639A /* KIMultipartTests-Info.plist */,
+				D4C24C8619C48A610015639A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4C24C5A19C48A600015639A /* KIMultipart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4C24C8D19C48A610015639A /* Build configuration list for PBXNativeTarget "KIMultipart" */;
+			buildPhases = (
+				D4C24C5719C48A600015639A /* Sources */,
+				D4C24C5819C48A600015639A /* Frameworks */,
+				D4C24C5919C48A600015639A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KIMultipart;
+			productName = KIMultipart;
+			productReference = D4C24C5B19C48A600015639A /* KIMultipart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4C24C7B19C48A610015639A /* KIMultipartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4C24C9019C48A610015639A /* Build configuration list for PBXNativeTarget "KIMultipartTests" */;
+			buildPhases = (
+				D4C24C7819C48A610015639A /* Sources */,
+				D4C24C7919C48A610015639A /* Frameworks */,
+				D4C24C7A19C48A610015639A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4C24C8219C48A610015639A /* PBXTargetDependency */,
+			);
+			name = KIMultipartTests;
+			productName = KIMultipartTests;
+			productReference = D4C24C7C19C48A610015639A /* KIMultipartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4C24C5319C48A600015639A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KI;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = kaiinui;
+				TargetAttributes = {
+					D4C24C7B19C48A610015639A = {
+						TestTargetID = D4C24C5A19C48A600015639A;
+					};
+				};
+			};
+			buildConfigurationList = D4C24C5619C48A600015639A /* Build configuration list for PBXProject "KIMultipart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4C24C5219C48A600015639A;
+			productRefGroup = D4C24C5C19C48A600015639A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4C24C5A19C48A600015639A /* KIMultipart */,
+				D4C24C7B19C48A610015639A /* KIMultipartTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4C24C5919C48A600015639A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C24C7719C48A600015639A /* Images.xcassets in Resources */,
+				D4C24C6919C48A600015639A /* InfoPlist.strings in Resources */,
+				D4C24C7219C48A600015639A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C24C7A19C48A610015639A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C24C8819C48A610015639A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4C24C5719C48A600015639A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C24C7519C48A600015639A /* KIViewController.m in Sources */,
+				D4C24C6F19C48A600015639A /* KIAppDelegate.m in Sources */,
+				D4C24C6B19C48A600015639A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4C24C7819C48A610015639A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C24C8A19C48A610015639A /* KIMultipartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4C24C8219C48A610015639A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4C24C5A19C48A600015639A /* KIMultipart */;
+			targetProxy = D4C24C8119C48A610015639A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4C24C6719C48A600015639A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4C24C6819C48A600015639A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D4C24C7019C48A600015639A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4C24C7119C48A600015639A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D4C24C8619C48A610015639A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4C24C8719C48A610015639A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4C24C8B19C48A610015639A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D4C24C8C19C48A610015639A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4C24C8E19C48A610015639A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KIMultipart/KIMultipart-Prefix.pch";
+				INFOPLIST_FILE = "KIMultipart/KIMultipart-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D4C24C8F19C48A610015639A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KIMultipart/KIMultipart-Prefix.pch";
+				INFOPLIST_FILE = "KIMultipart/KIMultipart-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D4C24C9119C48A610015639A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KIMultipart.app/KIMultipart";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KIMultipart/KIMultipart-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KIMultipartTests/KIMultipartTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D4C24C9219C48A610015639A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KIMultipart.app/KIMultipart";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KIMultipart/KIMultipart-Prefix.pch";
+				INFOPLIST_FILE = "KIMultipartTests/KIMultipartTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4C24C5619C48A600015639A /* Build configuration list for PBXProject "KIMultipart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C24C8B19C48A610015639A /* Debug */,
+				D4C24C8C19C48A610015639A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4C24C8D19C48A610015639A /* Build configuration list for PBXNativeTarget "KIMultipart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C24C8E19C48A610015639A /* Debug */,
+				D4C24C8F19C48A610015639A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4C24C9019C48A610015639A /* Build configuration list for PBXNativeTarget "KIMultipartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C24C9119C48A610015639A /* Debug */,
+				D4C24C9219C48A610015639A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4C24C5319C48A600015639A /* Project object */;
+}
