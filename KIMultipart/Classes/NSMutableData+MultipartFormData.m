@@ -1,3 +1,7 @@
+// References:
+//   The Multipart Content-Type - http://www.w3.org/Protocols/rfc1341/7_2_Multipart.html
+//   Sending Multipart Forms with Objective-C - http://nthn.me/posts/2012/objc-multipart-forms.html
+
 #import "NSMutableData+MultipartFormData.h"
 
 NSString *const KIMultipartBoundary = @"KIBoundary";
@@ -40,6 +44,12 @@ NSString *const KIMultipartContentType = @"multipart/form-data; boundary=KIBound
 }
 
 # pragma mark - Data
+
+- (void)mp_setData:(NSData *)data forKey:(NSString *)key {
+    NSString *filename = [self mp_uniqueName];
+    
+    [self mp_setData:data withFilename:filename forKey:key];
+}
 
 - (void)mp_setData:(NSData *)data withFilename:(NSString *)filename forKey:(NSString *)key {
     [self mp_setBoundary];

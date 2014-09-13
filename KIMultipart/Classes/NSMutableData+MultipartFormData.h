@@ -1,5 +1,8 @@
 #import <Foundation/Foundation.h>
 
+/**
+ *  This string must be set to the request's `Content-Type`.
+ */
 extern NSString *const KIMultipartContentType;
 
 /**
@@ -55,12 +58,31 @@ extern NSString *const KIMultipartContentType;
 
 # pragma mark - Data
 
+/**
+ *  Appends given data into the data in multipart/form-data format.
+ *  Please note the data's filename will be like "807E6F16-0F10-43BD-9EBD-C93533816E31"
+ *  If you want to set the data's filename, please use `- mp_setData:withFilename:forKey:`.
+ *
+ *  @param data <#data description#>
+ *  @param key  <#key description#>
+ */
+- (void)mp_setData:(NSData *)data forKey:(NSString *)key;
+
+/**
+ *  Appends given data into the data in multipart/form-data format.
+ *
+ *  @param data     A value.
+ *  @param filename A name represent the data.
+ *  @param key      A key paired with the value.
+ */
 - (void)mp_setData:(NSData *)data withFilename:(NSString *)filename forKey:(NSString *)key;
 
 # pragma mark - Data Shorthand (Image)
 
 /**
  *  Appends given image into the data in multipart/form-data format.
+ *  Please note the data's filename will be like "807E6F16-0F10-43BD-9EBD-C93533816E31.jpg"
+ *  If you want to set the data's filename, please use `- mp_setJPEGImage:withFilename:forKey:`.
  *
  *  @param image   An image you want to append.
  *  @param quality JPEG compression quality between 0.0f ~ 1.0f.
@@ -83,6 +105,26 @@ extern NSString *const KIMultipartContentType;
 
 # pragma mark - Debugging Utilities
 
+/**
+ *  For debugging purpose, you can get the string representation of this data.
+ *  The return value used to be like
+ *
+ *      --KIBoundary
+ *      Content-Disposition: form-data; name="string"
+ *
+ *      bar
+ *      --KIBoundary
+ *      Content-Disposition: form-data; name="number"
+ *
+ *      3
+ *      --KIBoundary
+ *      Content-Disposition: form-data; name="alice"; filename="E05538CE-96B6-4AD9-9CE7-C9E3E943FCE5.jpg"
+ *      Content-Type: application/octet-stream
+ *
+ *      ÿØÿà
+ *
+ *  @return The data represented in ASCII encoded string.
+ */
 - (NSString *)mp_stringRepresentation;
 
 @end
