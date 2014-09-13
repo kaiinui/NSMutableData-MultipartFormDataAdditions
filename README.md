@@ -3,6 +3,25 @@ NSMutableData-MultipartFormDataAdditions
 
 Easily build multipart/form-data formatted data. (which used to post an image.)
 
+You can build the data as following.
+
+```objc
+NSMutableData *body = [[NSMutableData alloc] init];
+[body mp_setString:@"bar" forKey:@"foo"];
+[body mp_setPNGImage:[UIImage named:@"sample.png"] forKey:@"photo"];
+
+[request setHTTPBody:body]; // NSMutableURLRequest
+```
+
+Please note you must set appropriate HTTP headers
+
+```objc
+[request addValue:KIMultipartContentType forHTTPHeaderField:@"Content-Type"];
+[request setHTTPMethod:@"POST"];
+```
+
+And you can find some documentations in the header.
+
 ```objc
 #import <Foundation/Foundation.h>
 
